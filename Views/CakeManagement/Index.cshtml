@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Cake>
+
+<h2>Cake Management</h2>
+
+@if (!Model.Any())
+{
+    <tr><td colspan="3" class="text-center">No cakes at this point :()</td></tr>
+}
+else
+{
+    <table class="table table-condensed table-bordered">
+        <tr>
+            <th>Cake ID</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>In stock</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+        @foreach (var ce in Model)
+        {
+            <tr>
+                <td>@ce.CakeId</td>
+                <td><img src="@ce.ImageThumbnailUrl" /></td>
+                <td>@ce.Name</td>
+                <td><input type="checkbox" asp-for="@ce.InStock" />
+                <td>@ce.Price</td>
+                <td>
+                    <form asp-action="DeleteCake" asp-route-cakeId="@ce.CakeId" method="post">
+                        <a class="btn btn-sm btn-primary" asp-action="EditCake" asp-route-cakeId="@ce.CakeId">Edit</a>
+                        <button type="submit" onclick="return confirm('Do you really want to delete this cake?');" class="btn btn-sm btn-danger">
+                            Delete
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+}
+<p>
+    <a class="btn btn-primary" asp-action="AddCake">Add new cake</a>
+</p>
