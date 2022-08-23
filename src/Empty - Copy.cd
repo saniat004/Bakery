@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SaniatsCakeShop.Controllers.AdminController">
+    <Position X="1.5" Y="1" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>QAAABAAAAIAAAEQEABAAIAAgAAAAAAAgAAEAAAAAAgA=</HashCode>
+      <FileName>Controllers\AdminController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaniatsCakeShop.ViewModels.AddDeleteUserRoleViewModel">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAgAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AddDeleteUserRoleViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AdminController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SaniatsCakeShop.ViewModels.AddRoleViewModel">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>ViewModels\AddRoleViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AdminController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SaniatsCakeShop.ViewModels.AddUserRoleViewModel">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAgAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AddUserRoleViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AdminController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SaniatsCakeShop.ViewModels.AddUserViewModel">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAgIAAAAAAQAAAIAAAACAQAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AddUserViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AdminController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SaniatsCakeShop.ViewModels.CakeEditViewModel">
+    <Position X="9.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAggAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\CakeEditViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AdminController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SaniatsCakeShop.ViewModels.EditRoleViewModel">
+    <Position X="11.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACACAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>ViewModels\EditRoleViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AdminController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SaniatsCakeShop.ViewModels.EditUserViewModel">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAgIAAAAABQAAAIAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\EditUserViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AdminController" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
