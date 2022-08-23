@@ -2,7 +2,7 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-image: url('/images/pATTERN.JPG');
+    background-image: url('../Images/backgroundpattern.JPG');
     background-repeat: repeat;
     font-family: 'Source Sans Pro', sans-serif;
 }
