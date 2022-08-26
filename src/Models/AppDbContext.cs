@@ -29,13 +29,8 @@ namespace SaniatsCakeShop.Models
         {
             base.OnModelCreating(modelBuilder);
 
-
-            
-         
-
-        
+     
             //seed categories
-
 
 
             modelBuilder.Entity<Category>().HasData(new Category { CategoryId = 1, CategoryName = "Fruit cakes" });
@@ -63,14 +58,14 @@ namespace SaniatsCakeShop.Models
                 InStock = true,
                 IsCakeOfTheWeek = true,
                 ImageThumbnailUrl = "https://i.imgur.com/lbEcaUo.jpeg",
+                AllergyInformation = "",
                 NutritionName = "Nutrition Info : Per 100 grams",
 
                 Calorie = "352 calories",
                 Protein = "0.72 grams",
                 fiber = " 0.24 grams",
                 niacin = " 0.14 grams",
-                magnesium = "0.34 grams ",
-                AllergyInformation = ""
+                magnesium = "0.34 grams "
                 
             });
 
@@ -322,14 +317,7 @@ namespace SaniatsCakeShop.Models
                 magnesium = "0.24 grams "
             });
             
-            modelBuilder.Entity<IdentityUserClaim<string>>().HasData(
-                new IdentityUserClaim<string>
-                {
-                    Id = 1,
-                    ClaimType = ClaimTypes.Role,
-                    ClaimValue = "Administrator",
-                    UserId = "a097afec-61a7-4372-b405-de00c4dd41ff"
-                });
+       
             
         }
     }

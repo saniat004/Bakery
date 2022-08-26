@@ -41,16 +41,7 @@ namespace SaniatsCakeShop
                 .AddEntityFrameworkStores<AppDbContext>();
 
 
-            //services.AddIdentity<IdentityUser, IdentityRole>(options =>
-            //{
-            //    options.Password.RequiredLength = 8;
-            //    options.Password.RequireNonAlphanumeric = true;
-            //    options.Password.RequireUppercase = true;
-            //    options.User.RequireUniqueEmail = true;
-            //    options.ClaimsIdentity.RoleClaimType = "Administrator";
-            //});
-
-            // services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppDbContext>();
+            
 
             services.AddScoped<IUserClaimsPrincipalFactory<IdentityUser>, UserClaimsPrincipalFactory<IdentityUser, IdentityRole>>();
 
@@ -59,7 +50,7 @@ namespace SaniatsCakeShop
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
-           // services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
+           
              services.AddMvc();
            
 
@@ -68,9 +59,7 @@ namespace SaniatsCakeShop
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("AdministratorOnly", policy => policy.RequireRole("Administrator"));
-                options.AddPolicy("DeletePie", policy => policy.RequireClaim("Delete Pie", "Delete Pie"));
-                options.AddPolicy("AddPie", policy => policy.RequireClaim("Add Pie", "Add Pie"));
-               // options.AddPolicy("MinimumOrderAge", policy => policy.Requirements.Add(new MinimumOrderAgeRequirement(18)));
+               
             });
 
             services.AddMemoryCache();

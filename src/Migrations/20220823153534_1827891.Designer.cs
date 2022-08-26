@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SaniatsCakeShop.Models;
 
 namespace SaniatsCakeShop.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220823153534_1827891")]
+    partial class _1827891
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -290,26 +292,6 @@ namespace SaniatsCakeShop.Migrations
                     b.ToTable("Cakes");
 
                     b.HasData(
-                        new
-                        {
-                            CakeId = 1,
-                            AllergyInformation = "",
-                            Calorie = "352 calories",
-                            CategoryId = 1,
-                            ImageThumbnailUrl = "https://i.imgur.com/lbEcaUo.jpeg",
-                            ImageUrl = "https://i.ytimg.com/vi/dh6GgbgQ5j0/maxresdefault.jpg",
-                            InStock = true,
-                            IsCakeOfTheWeek = true,
-                            LongDescription = "A delicious soft and light vanilla sponge cake filled with homemade fruit filling and topped with delicious fresh fruits and freshly whipped cream.",
-                            Name = "FRESH FRUIT CAKE",
-                            NutritionName = "Nutrition Info : Per 100 grams",
-                            Price = 8.95m,
-                            Protein = "0.72 grams",
-                            ShortDescription = " ",
-                            fiber = " 0.24 grams",
-                            magnesium = "0.34 grams ",
-                            niacin = " 0.14 grams"
-                        },
                         new
                         {
                             CakeId = 2,
